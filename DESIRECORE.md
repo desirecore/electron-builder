@@ -73,4 +73,4 @@ gh release create electron-updater-v6.8.9-desirecore.1 electron-updater-6.8.9-de
 3. 先跑一遍测试确认上游是否已自行修复（若修复，对应补丁可以丢弃）
 4. 版本号改成 `<新版本>-desirecore.1`，构建、比对、发 Release，再更新 DesireCore 的依赖 URL 与 lock
 
-这些修复适合提交给上游；上游合并并发版后，DesireCore 应切回 npm 官方包，本 fork 随之退役。
+这三处修复已提给上游：**[electron-userland/electron-builder#10192](https://github.com/electron-userland/electron-builder/pull/10192)**（基于 upstream/master 重做，带 changeset 与同一份回归测试）。上游合并并发版后，DesireCore 应切回 npm 官方包，本 fork 随之退役。
